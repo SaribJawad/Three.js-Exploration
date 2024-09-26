@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trying ThreeJS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Ensure no padding or margin anywhere */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body class="h-screen w-screen bg-black relative overflow-hidden">
+    <div
+      class="absolute top-14 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
+    >
+      <h1 class="text-4xl font-bold text-white">Exploring Three.js</h1>
+      <p class="text-lg text-gray-500">
+        Playing with 3D models, lighting, and more!
+      </p>
+    </div>
+
+    <canvas id="box" class="block h-full w-full"></canvas>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
